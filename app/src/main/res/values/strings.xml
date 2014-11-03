@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WorkoutChrono</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_launch">Lancer</string>
+    <string name="action_edit">Editer</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_add_exercise">Ajouter un Exercice</string>
+
+    <string-array name="typesArray">
+        <item>Repetitions</item>
+        <item>Temps</item>
+        <item>Repos</item>
+    </string-array>
+
+    <string name="resume">Resume</string>
+    <string name="pause">Pause</string>
+    <string name="action_add_workout">Add Workout</string>
+    <string name="title_activity_pick_number">PickNumberActivity</string>
+    <string name="title_activity_pick_time">PickTimeActivity</string>
+
+</resources>

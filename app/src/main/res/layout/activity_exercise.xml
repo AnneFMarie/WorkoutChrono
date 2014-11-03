@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/exerciseNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom de l'exercice" />
+
+            <EditText
+                android:id="@+id/exerciseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ExerciseName"
+                android:hint="Set exercise Name here"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/exerciseTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type d'exercice" />
+
+            <!--TextView
+                android:id="@+id/exoType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/-->
+            <Spinner
+                android:id="@+id/exoTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/RepetitionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de Repetition" />
+
+
+            <TextView
+                android:id="@+id/repetiton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="temps / nb de repet"
+                android:text="" />
+
+            </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nbSeriesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de Series" />
+
+
+            <TextView
+                android:id="@+id/nbSeries"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="nb de Series"
+                android:text="" />
+
+            </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ReposText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repos entre séries (seconde)" />
+
+            <TextView
+                android:id="@+id/repos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Temps de repos entre deux séries"
+                android:text="" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/imageText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Image" />
+
+               <ImageButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_menu_add"
+                   android:id="@+id/addImage"/>
+           </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView" />
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exerciseList"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonSaveExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sauver" />
+
+        <Button
+            android:id="@+id/buttonDismissExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annuler" />
+
+        <Button
+            android:id="@+id/buttonDeleteExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer" />
+    </LinearLayout>
+
+</LinearLayout>
